@@ -187,12 +187,15 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 .section-title-border {
     width: 200px;
     height: 1.5px;
+}
+.section-title-border-black{
     background-color: black;
 }
+.section-title-border-white{
+    background-color: white;
+}
 .section-title {
-    margin: 0 0 20px;
     text-align: center;
-    font-size: 19px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 700;
@@ -207,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     width: 100%;
     background-color: #b30058;
 }
-.section-container-pink{
+.section-container-white{
     background-color: white;
     width:100%;
     padding:2%;
@@ -231,20 +234,21 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     display: flex;
     padding: 1%;
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 .section-p{
-    padding:2%;
+    padding:5%;
     justify-content: center;
     align-items: center;
 }
 .timeline{
     position:relative;
     margin:auto;
-    max-width:1000px;
+    max-width:960px;
     padding:1% 0;
     color:black;
     line-height: 1.2em;
+
 }
 .timeline:before{
    content:'';
@@ -263,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     list-style: none;
     position:relative;
     width: 50%;
-    padding: 1%
+    padding: 3%
 }
 .timeline ul li:nth-child(odd){
     float:left;
@@ -323,6 +327,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     color:white;
     background:#b30058;
     border-radius: 18px;
+    text-align: center
 }
 .timeline ul li:nth-child(even) .timeline-time{
     top: 5%;
@@ -332,6 +337,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     color:white;
     background:#b30058;
     border-radius: 18px;
+    text-align: center
 }
 
 .skill-container{
@@ -529,15 +535,18 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 .section-social-icons{
     text-align: center;
 }
+.social-padding{
+    padding:5%
+}
 .normal {
     font-weight: normal;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #body-name-hr{max-width:70%}
-    .logo-img {
-        background-image: url('../img/favicon-32x32.png');background-size: contain;
-    }
+    .logo-img {background-image: url('../img/favicon-32x32.png');}
+    .doc-img {background-size:20px 20px}
+
     h1, h2, h3, h4, h5, h6 {
         font-size:1.2em;
     }
