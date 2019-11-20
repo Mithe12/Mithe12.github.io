@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 /*Header*/
 .header{ position: sticky;position: -webkit-sticky;position: -moz-sticky;position: -ms-sticky;position: -o-sticky;top: 0;width:100%;z-index:5}
 .header-container {background-color: #FFFFFF;display: flex;padding: 0; }
-.logo-img {background-image: url('../img/android-chrome-192x192.png');width: 100%;height: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+.logo-img {background-image: url('../img/logo.png');width: 100%;height: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
 .doc-img {background-image: url('../img/resume.png');width: 100%;height: 100%;background-repeat: no-repeat;background-position: center;}
 .header-name-style{text-align: center;width:100%;}
 .relative-logo-padding{padding: 3px;}
@@ -249,14 +249,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
     color:black;
     line-height: 1.2em;
 
-}
-.timeline:before{
-   content:'';
-    position: absolute;
-    width:1px;
-    height: 95%;
-    left: 4%;
-    background: black;
 }
 .timeline ul{
     margin:0;
@@ -504,7 +496,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #body-name-hr{max-width:70%}
-    .logo-img {background-image: url('../img/favicon-32x32.png');}
+    .logo-img {background-image: url('../img/logo-32x32.png');}
     .doc-img {background-size:20px 20px}
 
     h1, h2, h3, h4, h5, h6 {
