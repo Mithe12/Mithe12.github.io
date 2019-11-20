@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 .timeline{
     position:relative;
     margin:auto;
-    max-width:960px;
+    max-width:800px;
     padding:1% 0;
     color:black;
     line-height: 1.2em;
@@ -253,49 +253,24 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 .timeline:before{
    content:'';
     position: absolute;
-    left:50%;
     width:1px;
-    height: 90%;
+    height: 95%;
     background: black;
 }
 .timeline ul{
     margin:0;
-    padding:0;
-}
+   }
 
 .timeline ul li {
     list-style: none;
     position:relative;
-    width: 50%;
-    padding: 3%
 }
-.timeline ul li:nth-child(odd){
-    float:left;
-    text-align:right;
-    clear: both;
 
-}
-.timeline ul li:nth-child(odd):before{
+.timeline-bullet li ul:before{
     content:'';
     position:absolute;
-    top:16px;
-    right:-5px;
-    width:10px;
-    height: 10px;
-    background: #b30058;
-    border-radius:50%;
-    box-shadow: 0 0 3px #b30058;
-}
-.timeline ul li:nth-child(even){
-    float:right;
-    text-align:left;
-    clear: both;
-}
-.timeline ul li:nth-child(even):before{
-    content:'';
-    position:absolute;
-    top:16px;
-    left:-5px;
+    top:10px;
+    left:-45px;
     width:10px;
     height: 10px;
     background: #b30058;
@@ -305,41 +280,25 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 .timeline-content{
     padding:1%;
 }
-.timeline ul li h3{
-     margin:0;
-    padding:1%;
-    font-weight: 600;
-    color:black;
-}
-.timeline ul li p{
-    margin:auto;
-    padding:2%;
-}
-.timeline ul li .timeline-time h4{
-    margin:0;
-    padding:0;
-}
-.timeline ul li:nth-child(odd) .timeline-time{
-    top: 5%;
-    right: -16%;
-    margin:0;
-    padding:1%;
-    color:white;
-    background:#b30058;
-    border-radius: 18px;
-    text-align: center
-}
-.timeline ul li:nth-child(even) .timeline-time{
-    top: 5%;
-    left: -16%;
-    margin:0;
-    padding:1%;
-    color:white;
-    background:#b30058;
-    border-radius: 18px;
-    text-align: center
-}
 
+.timeline-time{
+    color:white;
+    background:#b30058;
+    border-radius: 18px;
+}
+.timeline-time p{
+    margin:auto;
+    padding:1%;
+}
+.margin-adjust{
+    margin: 0 auto;
+}
+ .bullet li{
+     list-style: square !important;
+     margin: 2px !important;
+
+}
+.list{padding: 1%;}
 .skill-container{
     position: relative;
     margin: auto;
@@ -566,3 +525,8 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Crimson Text', serif;}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+.bullet li:before{
+    content: '';
+    background: black !important;
+
+}
